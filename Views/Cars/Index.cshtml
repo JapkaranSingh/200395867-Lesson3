@@ -1,0 +1,16 @@
+﻿
+@model List<_200395867_Lesson3.Models.Car>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+@foreach (var car in Model)
+{
+    @car.Id
+    @car.Brand
+    @car.Model
+    @car.Type
+    @car.Year
+}
